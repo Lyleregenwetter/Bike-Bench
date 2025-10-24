@@ -1,6 +1,6 @@
-# Bike-Bench
+# BikeBench
 
-Bike-Bench provides a standardized environment for evaluating and rendering bicycle frame designs using machine learning models, ergonomic simulations, and geometry-based constraints, and more. Bike-Bench suppors a variety of design generation algorithms spanning LLMS, tabular generative models, gradient-based and heuristic optimization, and Optimization-Augmented Generative Models
+BikeBench provides a standardized environment for evaluating and rendering bicycle frame designs using machine learning models, ergonomic simulations, and geometry-based constraints, and more. Bike-Bench suppors a variety of design generation algorithms spanning LLMS, tabular generative models, gradient-based and heuristic optimization, and Optimization-Augmented Generative Models
 
 ---
 
@@ -52,7 +52,7 @@ conda env create -f env.yml
 ### 3. Activate the environment
 
 ```bash
-conda activate bike-bench
+conda activate bikebench
 ```
 
 > Tip: You can rename the environment in `env.yml` under the `name:` field.
@@ -77,7 +77,7 @@ If you need to install or upgrade, Java distributions are available at:
 ---
 ## Citing this Paper or Repository
 @inproceedings{regenwetter2025bikebench,
-  title={Bike-Bench: A Bicycle Design Benchmark for Generative Models with Objectives and Constraints},
+  title={BikeBench: A Bicycle Design Benchmark for Generative Models with Objectives and Constraints},
   author={Regenwetter, Lyle and Abu Obaideh, Yazan and Chiotti, Fabien and Lykourentzou, Ioanna and Ahmed, Faez},
   booktitle={NeurIPS 2025 Datasets and Benchmarks Track},
   year={2025},
