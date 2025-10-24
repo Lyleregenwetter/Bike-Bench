@@ -1,4 +1,4 @@
-name: bike-bench-cuda
+name: bikebench-cuda
 channels:
   - conda-forge
 dependencies:
