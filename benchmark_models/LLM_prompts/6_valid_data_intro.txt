@@ -1,0 +1,1 @@
+Here is a csv file with {{valid_n}} examples of bikes that satisfy the constraints. The csv has {{valid_n}} rows (bikes) plus a header row and exactly 64 columns (parameters): 

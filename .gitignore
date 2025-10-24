@@ -1,0 +1,9 @@
+**/__pycache__/
+__pycache__/
+src/resources/datasets/Generative_Modeling_Datasets/
+src/resources/datasets/Predictive_Modeling_Datasets/
+src/resources/datasets/Original_BIKED_Data/
+src/resources/datasets/Real_Extended_Data/
+src/resources/datasets/Synthetic_Extended_Data/
+**/BikeCAD_17.1_configuration/
+introductory_notebooks/frames/

@@ -1,0 +1,12 @@
+{
+    "Design Quality \u2191 (HV)": 0.015143700987318811,
+    "Constraint Violation \u2193": 0.2157,
+    "Sim. to Data \u2193 (MMD)": 0.07644141017472345,
+    "Novelty \u2191": 6.174890222299336,
+    "Binary Validity \u2191": 0.8191000000000007,
+    "Diversity \u2193 (DPP)": 12.510542887043055,
+    "Evaluation Count": 3036.0,
+    "Conditional?": true,
+    "Masked Constraints?": true,
+    "Gradient Free?": true
+}

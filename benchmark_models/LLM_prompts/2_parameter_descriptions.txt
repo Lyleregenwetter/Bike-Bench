@@ -1,0 +1,68 @@
+Descriptions of all parameters in the standard bike-bench design representation scheme. General notes: All lengths are measured in mm. All angles are measured in degrees.
+
+The 64 variables are described as follows:
+
+1. 'Seatpost LENGTH' [Continuous]: The length of the seat post.
+2. 'CS textfield' [Continuous]: The length of the chain stay tubes.
+3. 'BB textfield' [Continuous]: Bottom bracket drop, measured as the vertical drop from the rear axle to the center of the bottom bracket. By convention, positive values imply the bottom bracket lies below the axle.
+4. 'Stack' [Continuous]: The vertical distance from the top of the head tube to the bottom bracket.
+5. 'Head angle' [Continuous]: The angle of the head tube clockwise from horizontal, in degrees.
+6. 'Head tube length textfield' [Continuous]: The length of the head tube.
+7. 'Seat stay junction0' [Continuous]: The length along the seat tube from the top of the seat tube to the junction with the seat stays. By convention, this is measured to the center of the seat stays.
+8. 'Seat tube length' [Continuous]: The length of the seat tube.
+9. 'Seat angle' [Continuous]: The angle of the seat tube clockwise from horizontal.
+10. 'DT Length' [Continuous]: The length of the down tube.
+11. 'FORK0R' [Continuous]: Fork offset, measured as the perpendicular distance from the front axle to the head tube axis.
+12. 'BB diameter' [Continuous]: The diameter of the bottom bracket.
+13. 'ttd' [Continuous]: Top tube outer diameter.
+14. 'dtd' [Continuous]: Down tube outer diameter.
+15. 'csd' [Continuous]: Chain stay outer diameter.
+16. 'std' [Continuous]: Seat tube outer diameter.
+17. 'htd' [Continuous]: Head tube outer diameter.
+18. 'ssd' [Continuous]: Seat stay outer diameter.
+19. 'Chain stay position on BB' [Continuous]: The distance along the length of the bottom bracket from its edge to the center of the chain stay tubes.
+20. 'SSTopZOFFSET' [Continuous]: The offset from the center plane of the bike of the joints connecting the seat stays to the seat tube.
+21. 'MATERIAL' [Categorical]: The material of the bike frame. Possible values are: 'ALUMINIUM', 'STEEL', 'TITANIUM'.
+22. 'Head tube upper extension2' [Continuous]: The length from the top of the head tube to the junction with the top tube. By convention, this is measured to the center of the top tube.
+23. 'Seat tube extension2' [Continuous]: The length from the top of the seat tube to the junction with the top tube. By convention, this is measured to the center of the top tube.
+24. 'Head tube lower extension2' [Continuous]: The length from the bottom of the head tube to the junction with the down tube. By convention, this is measured to the center of the down tube.
+25. 'SEATSTAYbrdgshift' [Continuous]: The distance along the center plane of the bike from the seat stay and seat tube junction to the seat stay bridge, if present on the bike.
+26. 'CHAINSTAYbrdgshift' [Continuous]: The distance along the center plane of the bike from the outer edge of the bottom bracket to the chain stay bridge, if present on the bike.
+27. 'SEATSTAYbrdgdia1' [Continuous]: The diameter of the seat stay bridge, if present on the bike.
+28. 'CHAINSTAYbrdgdia1' [Continuous]: The diameter of the chain stay bridge, if present on the bike.
+29. 'SEATSTAYbrdgCheck' [Boolean]: A boolean value indicating whether the seat stay bridge is present on the bike.
+30. 'CHAINSTAYbrdgCheck' [Boolean]: A boolean value indicating whether the chain stay bridge is present on the bike.
+31. 'Dropout spacing' [Continuous]: The distance between the rear dropouts.
+32. 'Wall thickness Bottom Bracket' [Continuous]: The tube wall thickness of the bottom bracket.
+33. 'Wall thickness Top tube' [Continuous]: The tube wall thickness of the top tube.
+34. 'Wall thickness Head tube' [Continuous]: The tube wall thickness of the head tube.
+35. 'Wall thickness Down tube' [Continuous]: The tube wall thickness of the down tube.
+36. 'Wall thickness Chain stay' [Continuous]: The tube wall thickness of the chain stay.
+37. 'Wall thickness Seat stay' [Continuous]: The tube wall thickness of the seat stay.
+38. 'Wall thickness Seat tube' [Continuous]: The tube wall thickness of the seat tube.
+39. 'Wheel diameter front' [Continuous]: The outer diameter of the front wheel.
+40. 'RDBSD' [Continuous]: The difference between rear wheel outer diameter and bead seat diameter, roughly approximating the tire thickness.
+41. 'Wheel diameter rear' [Continuous]: The outer diameter of the rear wheel.
+42. 'FDBSD' [Continuous]: The difference between front wheel outer diameter and bead seat diameter, roughly approximating the tire thickness.
+43. 'Fork type' [Categorical]: The style of fork. Possible values are: '0', '1', '2'. 0 is a rigid fork, 1 is a single crown fork, 2 is a double crown fork.
+44. 'Stem kind' [Categorical]: The style of stem. Possible values are: '0', '1', '2'. 0 is a stem that features a sharp and immediate angle away from the head tube. 1 is a stem that features a sharp angle some distance away from the head tube. 2 is a stem that features a gradual angle away from the head tube after initially extending in line with the head tube.
+45. 'Handlebar style' [Categorical]: The style of the handlebars. Possible values are: '0', '1', '2'. 0 is a drop bar, 1 is a mountain bike bar, 2 is a bullhorn bar.
+46. 'BB length' [Continuous]: The length of the bottom bracket.
+47. 'Wheel cut' [Continuous]: The diameter of the cutout of the seat tube for the rear wheel, if using an aerodynamic tube type.
+48. 'BELTorCHAIN' [Boolean]: A boolean value indicating whether the bike has a chain (True) as opposed to a belt.
+49. 'Number of cogs' [Integer]: The number of cogs on the rear wheel.
+50. 'Number of chainrings' [Integer]: The number of chainrings attached to the crank.
+51. 'FIRST color R_RGB' [Continuous]: The red component of the primary paint color of the bike.
+52. 'FIRST color G_RGB' [Continuous]: The green component of the primary paint color of the bike.
+53. 'FIRST color B_RGB' [Continuous]: The blue component of the primary paint color of the bike.
+54. 'RIM_STYLE front' [Categorical]: The style of the front rim. Possible values are: 'DISC', 'SPOKED', 'TRISPOKE'. Despite the name, trispoke class implies composite spokes but does not necessarily imply three composite spokes.
+55. 'RIM_STYLE rear' [Categorical]: The style of the rear rim. Possible values are: 'DISC', 'SPOKED', 'TRISPOKE'. Despite the name, trispoke class implies composite spokes but does not necessarily imply three composite spokes.
+56. 'SPOKES composite front' [Integer]: If applicable, the number of composite spokes in the front wheel minus two (a value of 1 is a trispoke wheel).
+57. 'SPOKES composite rear' [Integer]: If applicable, the number of composite spokes in the rear wheel minus two (a value of 1 is a trispoke wheel).
+58. 'SBLADEW front' [Continuous]: If applicable, the width of the front wheel composite spokes.
+59. 'SBLADEW rear' [Continuous]: If applicable, the width of the rear wheel composite spokes.
+60. 'Saddle length' [Continuous]: The length of the saddle.
+61. 'Saddle height' [Continuous]: The vertical distance from the saddle to the bottom bracket.
+62. 'Seat tube type' [Categorical]: The style of seat tube. Possible values are: '0', '1', '2'. 0 is aerodynamic, while 1 and 2 are standard round tubes with no distinction in this representation scheme.
+63. 'Head tube type' [Categorical]: The style of head tube. Possible values are: '0', '1', '2', '3'. 0 is aerodynamic, while 1 and 2 are standard round tubes with no distinction in this representation scheme. 3 is a tapered head tube.
+64. 'Down tube type' [Categorical]: The style of down tube. Possible values are: '0', '1', '2'. 0 is aerodynamic, while 1 and 2 are standard round tubes with no distinction in this representation scheme.

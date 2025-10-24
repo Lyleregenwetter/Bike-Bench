@@ -1,0 +1,1 @@
+Next, here are the corresponding scores for those {{valid_n}} bikes in a csv file of {{valid_n}} designs (rows) plus a header row by 50 scores (columns). You can see that all constraint scores are less or equal to zero:

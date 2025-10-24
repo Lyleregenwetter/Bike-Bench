@@ -1,0 +1,1 @@
+Now that you have seen some example designs that satisfy the constraints, as well as their scores, here is a csv file with {{invalid_n}} examples of bikes that violate the constraints. This csv also has {{invalid_n}} rows (bikes) plus a header row and exactly 64 columns (parameters):

@@ -1,0 +1,19 @@
+{
+  "source": "LLM_outputs/unconditional/raw/76.txt",
+  "parsed": true,
+  "valid": true,
+  "reason": null,
+  "rows_in": 101,
+  "rows_kept": 100,
+  "cols_expected_total": 65,
+  "bad_len_rows": 0,
+  "dropped_bad_index": 0,
+  "duplicate_indices_dropped": 0,
+  "missing_indices": [],
+  "output_path": "LLM_outputs/unconditional/processed/76.csv",
+  "header_present": true,
+  "header_validated": false,
+  "header_mismatch_positions": [],
+  "detected_header": null,
+  "kept_unique_rows": 100
+}

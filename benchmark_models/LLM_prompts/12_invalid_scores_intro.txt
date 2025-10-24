@@ -1,0 +1,1 @@
+Finally, here are the corresponding scores for those {{invalid_n}} invalid bikes in a csv file of {{invalid_n}} designs (rows) plus a header row by 50 scores (columns). You can see that at least one constraint score is positive for each:

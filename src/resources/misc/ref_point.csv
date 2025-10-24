@@ -1,0 +1,50 @@
+Usability Score,1.0059241
+Drag Force (N),27.861992
+Knee Angle Error (deg.),127.78383
+Hip Angle Error (deg.),47.41717
+Arm Angle Error (deg.),54.18302
+Arm Too Long for Bike,-0.21971205
+Saddle Too Far From Handle,-0.056464136
+Torso Too Long for Bike,-0.366885
+Saddle Too Far From Crank,0.22086428
+Upper Leg Too Long for Bike,-0.5684242
+Lower Leg Too Long for Bike,-0.15311062
+Cosine Distance To Embedding,0.39972186
+Mass (kg),14.34326
+Planar Compliance Score,9.962891
+Transverse Compliance Score,8.808648
+Eccentric Compliance Score,8.635697
+Planar Safety Factor,1.2305812
+Eccentric Safety Factor,1.1785439
+Predicted Frame Validity,0.55
+Saddle Height Too Small,-97.435
+Saddle Collides With Seat Tube,83.23999
+Saddle Too Short,115.5
+Head Angle Over Limit,-95.1
+Seat Angle Over Limit,-87.7
+Seat Post Too Short,257.977
+Seat Post Too Long,79.27089
+Rear Wheel Inner Diameter Too Small,92.2
+Front Wheel Inner Diameter Too Small,92.2
+Seat Tube Extension Longer Than Seat Tube,-51.0
+Head Tube Upper Extension And Lower Extension Overlap,85.07499
+Seat Stay Junction Longer Than Seat Tube,-53.565
+Non-negative Parameter Is Negative,-4571.084
+Chain Stay Smaller Than Rear Wheel Radius,71.325
+Chain Stay Shorter Than BB Drop,-196.775
+Seat Stay Smaller Than Rear Wheel Radius,26.516027
+Seat Tube Collides With Rear Wheel,123.08644
+Down Tube Can't Reach Head Tube,-65.34191
+Rear Wheel Cutout Severs Seat Tube,49999972.0
+Foot Collides With Front Wheel,60363.273
+Crank Hits Ground In Lowest Position,44.55
+RGB Value Greater Than 255,38.25
+Chain Stays Intersect,40.745003
+Tube Wall Thickness Exceeds Radius,3.4379506
+Seat Tube Too Narrow For Seat Post,32.42751
+Down Tube Improperly Joins Head Tube,62.309597
+Top Tube Improperly Joins Head Tube,35.511604
+Top Tube Improperly Joins Seat Tube,42.88616
+Down Tube Collides With Front Wheel,47.536987
+Saddle Hits Top Tube,0.4291829
+Saddle Hits Head Tube,0.037365556

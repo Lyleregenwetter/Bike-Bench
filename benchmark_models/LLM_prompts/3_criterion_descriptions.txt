@@ -1,0 +1,54 @@
+Descriptions of all objectives and constraints in the standard bike-bench multi-objective engineering design benchmark. Some evaluation criteria are contingent on only the bike design, while others are also contingent on the conditional information. By convention, objectives are minimized at 0, with lower values being better. Constraints are also minimized, with 0 being the critical value. Larger positive values indicate more extreme constraint violation and larger magnitude negative values are more constraint-satisfying. In general, once a constraint is satisfied, we no longer care about further minimizing the value. However, achieving constraints is critical because designs that violate constraints are invalid. Thus, we must attempt to ensure that all constraints are simultaneously below zero. 
+
+The 50 objectives and constraints are described as follows:
+
+1: Usability Score [Objective]: The predicted 'usability,' as rated by a human, with 0 being the most usable and 1 being the least usable. Predicted by a regression model trained on human-collected ratings.
+2: Drag Force (N) [Objective]: The predicted drag force in N incurred by the cyclist in a 10 m/s headwind, as predicted by a regression model trained on computational fluid dynamics simulation data.
+3: Knee Angle Error (deg.) [Objective]: The difference between the minimum knee angle of the cyclist and the optimal reference range. May include a penalty term if the rider's geometry is completely incompatible with the bike. 
+4: Hip Angle Error (deg.) [Objective]: The difference between the torso-to-upper-leg angle of the cyclist and the optimal reference range. May include a penalty term if the rider's geometry is completely incompatible with the bike.
+5: Arm Angle Error (deg.) [Objective]: The difference between the torso-to-arm angle of the cyclist and the optimal reference range. May include a penalty term if the rider's geometry is completely incompatible with the bike.
+6: Arm Too Long for Bike [Constraint]: Constraint indicating that the length of the rider's arm is longer than the length of the rider's torso plus the distance from the saddle to the handlebars. Means the saddle is too close to the handlebars. 
+7: Saddle Too Far From Handle [Constraint]: Constraint indicating that the distance from the saddle to the handlebars is longer than the length of the rider's torso plus the length of the rider's arm. Means the saddle is too far from the handlebars. 
+8: Torso Too Long for Bike [Constraint]: Constraint indicating that the length of the rider's torso is longer than the length of the rider's arm plus the distance from the saddle to the handlebars. Means the saddle is too close to the handlebars. 
+9: Saddle Too Far From Crank [Constraint]: Constraint indicating that the distance from the saddle to the pedals in the far position is longer than the length of the rider's upper leg plus the length of the rider's lower leg. Means the saddle is too far from the pedals. 
+10: Upper Leg Too Long for Bike [Constraint]: Constraint indicating that the length of the rider's upper leg is longer than the distance from the saddle to the pedals in the far position plus the length of the rider's lower leg. Means the saddle is too close to the pedals. 
+11: Lower Leg Too Long for Bike [Constraint]: Constraint indicating that the length of the rider's lower leg is longer than the distance from the saddle to the pedals in the far position plus the length of the rider's upper leg. Means the saddle is too close to the pedals. 
+12: Cosine Distance To Embedding [Objective]: The cosine distance in the CLIP embedding space between the rendered bike image and the target text or image embedding.
+13: Mass (kg) [Objective]: The mass in kg of the bike frame, as predicted by a regression model trained on finite element analysis data.
+14: Planar Compliance Score [Objective]: A composite planar compliance score for the bike frame, as predicted by a regression model trained on finite element analysis data.
+15: Transverse Compliance Score [Objective]: A composite transverse compliance score for the bike frame, as predicted by a regression model trained on finite element analysis data.
+16: Eccentric Compliance Score [Objective]: A composite eccentric compliance score for the bike frame, as predicted by a regression model trained on finite element analysis data.
+17: Planar Safety Factor [Constraint]: Constraint quantified as 1.5 minus the safety factor under planar loading, as predicted by a regression model trained on finite element analysis data. Means the frame fails under planar loading.
+18: Eccentric Safety Factor [Constraint]: Constraint quantified as 1.5 minus the safety factor under eccentric loading, as predicted by a regression model trained on finite element analysis data. Means the frame fails under eccentric loading.
+19: Predicted Frame Validity [Constraint]: Constraint indicating some abstract issue with the frame, as predicted by a classification model trained to identify CAD models that failed to regenerate. Means the frame is invalid in an unspecified way.
+20: Saddle Height Too Small [Constraint]: Constraint indicating that the saddle height is too low to be functional.
+21: Saddle Collides With Seat Tube [Constraint]: Constraint indicating that the saddle height is so low that it collides with the top of the seat tube.
+22: Saddle Too Short [Constraint]: Constraint indicating that the length of the saddle is too short. 
+23: Head Angle Over Limit [Constraint]: Constraint indicating that the head angle is over 180 degrees. 
+24: Seat Angle Over Limit [Constraint]: Constraint indicating that the seat angle is over 180 degrees. 
+25: Seat Post Too Short [Constraint]: Constraint indicating that the seat post doesn't reach the seat tube given the prescribed saddle height.
+26: Seat Post Too Long [Constraint]: Constraint indicating that the seat post is so long that it hits the bottom bracket given the prescribed saddle height.
+27: Rear Wheel Inner Diameter Too Small [Constraint]: Constraint indicating that the rear wheel's inner diameter is too small to be functional.
+28: Front Wheel Inner Diameter Too Small [Constraint]: Constraint indicating that the front wheel's inner diameter is too small to be functional.
+29: Seat Tube Extension Longer Than Seat Tube [Constraint]: Constraint indicating that the distance from the top of the seat tube to the top tube junction is longer than the seat tube itself.
+30: Head Tube Upper Extension And Lower Extension Overlap [Constraint]: Constraint indicating that the top tube and down tubes intersect before their junctions with the head tube.
+31: Seat Stay Junction Longer Than Seat Tube [Constraint]: Constraint indicating that the distance from the top of the seat tube to the seat stay junction is longer than the seat tube itself.
+32: Non-negative Parameter Is Negative [Constraint]: Constraint indicating that at least one parameter that should be strictly positive is negative.
+33: Chain Stay Smaller Than Rear Wheel Radius [Constraint]: Constraint indicating that the chain stay length is smaller than the wheel radius, creating a collision.
+34: Chain Stay Shorter Than BB Drop [Constraint]: Constraint indicating that the vertical drop from the rear axle to the bottom bracket is greater than the chain stay length, creating an impossibility. 
+35: Seat Stay Smaller Than Rear Wheel Radius [Constraint]: Constraint indicating that the seat stay length is smaller than the wheel radius, creating a collision.
+36: Seat Tube Collides With Rear Wheel [Constraint]: Constraint indicating that the seat tube collides with the rear wheel. 
+37: Down Tube Can't Reach Head Tube [Constraint]: Constraint indicating that the down tube isn't long enough to reach the head tube, creating an impossibility. 
+38: Rear Wheel Cutout Severs Seat Tube [Constraint]: Constraint indicating that the diameter of the aero tube cutout of the seat tube is so large such that it is completely severing the seat tube. 
+39: Foot Collides With Front Wheel [Constraint]: Constraint indicating that the foot would collide with the pedal in its forward position, causing a collision when turning. 
+40: Crank Hits Ground In Lowest Position [Constraint]: Constraint indicating that the crank hits the ground during its rotation.
+41: RGB Value Greater Than 255 [Constraint]: Constraint indicating that one or more frame RGB values exceed 255.
+42: Chain Stays Collide [Constraint]: Constraint indicating that the chain stays collide with each other before reaching the bottom bracket.
+43: Tube Wall Thickness Exceeds Radius [Constraint]: Constraint indicating that some tubes' wall thickness exceeds their radius, creating an impossibility.
+44: Seat Tube Too Narrow For Seat Post [Constraint]: Constraint indicating that the seat post's outer diameter is wider than the seat tube's inner diameter, creating a collision. 
+45: Down Tube Improperly Joins Head Tube [Constraint]: Constraint indicating that the down tube is partially disconnected from the bottom of the head tube.
+46: Top Tube Improperly Joins Head Tube [Constraint]: Constraint indicating that the top tube is partially disconnected from the top of the head tube.
+47: Top Tube Improperly Joins Seat Tube [Constraint]: Constraint indicating that the top tube is partially disconnected from the top of the seat tube.
+48: Down Tube Collides With Front Wheel [Constraint]: Constraint indicating that the down tube collides with the front wheel. 
+49: Saddle Hits Top Tube [Constraint]: Constraint indicating that the saddle collides with the top tube.
+50: Saddle Hits Head Tube [Constraint]: Constraint indicating that the saddle collides with the head tube.
